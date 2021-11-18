@@ -35,7 +35,7 @@
 */
 @font-face {
   font-family: "Futura";
-  src: url("../fonts/futura/futura medium bt.ttf") format("opentype"), url("../fonts/gotham/GothamBold.ttf") format("truetype");
+  src: url("../fonts/futura/futura medium bt.ttf") format("opentype");
 }
 
 * {
