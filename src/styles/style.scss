@@ -4,6 +4,7 @@
 @font-face {
   font-family: "Futura";
   src: url("../fonts/futura/futura\ medium\ bt.ttf") format("opentype"),
+
 }
 
 *{
@@ -11,6 +12,7 @@
     padding:0;
     box-sizing: border-box;
     font-family: Futura;
+    overflow-x: hidden;
 }
 
 /**
@@ -134,7 +136,7 @@ a {
  .content-slider{
   font-size: 1.28vw;
   line-height: 1.4;
-  margin-bottom: 50px;
+  margin-bottom: 48px;
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -153,32 +155,30 @@ a {
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
-     justify-content:center;
+     justify-content: center;
      color: $container-text-color;
    }
 
     .card-short-content{
       text-align: center;
-      width: 420px;
-      height: 248px;
-      line-height: 1.5;
+      width: 332px;
+      line-height: 25px;
       font-weight: $default-font-weight;
       font-size: $h4-font-size;
       margin-top: $margin-top-bottom;
       margin-bottom: $margin-top-bottom;
+      margin-left: $margin-left-right-content;
+      margin-right: $margin-left-right-content;
 
     figure {
-        margin: auto;
-    }
-    
-    img {
-        max-width: 300px;
+      width: 332px;
+      height: 130px;
     }
 
     &__title{
-     font-size: $h2-font-size;
-     margin-top: $margin-top-title;
-     margin-bottom: $margin-bottom-title-container;
+     color: $title-text-color;
+     font-size: $h3-font-size;
+     height: 31px;
     }
   }
 
@@ -188,20 +188,18 @@ a {
 *
 */
     .card-short-content-blog{
-      width: 430px;
-      height: 456px;
+      width: 332px;
       line-height: 1.5;
       font-size: $h4-font-size;
-      margin-top: $margin-top-bottom;
-      margin-bottom: $margin-top-bottom;
-      padding-left: $padding-left-right-blog;
-      padding-right: $padding-left-right-blog;
+      margin-top: $margin-top-blog;
+      margin-bottom: $margin-bottom-blog;
+      margin-left: $margin-left-right-content;
+      margin-right: $margin-left-right-content;
 
-    
     img {
-      margin-top: 28px;
-      max-width: 330px;
+      max-width: 332px;
     }
+
     img:hover {
       opacity: 0.4;
       transition-duration: 0.8s;
@@ -209,7 +207,8 @@ a {
 
     &__title{
       font-size: $h3-font-size;
-      margin-bottom: $margin-bottom-title-blog;
+      color: $title-text-color;
+      height: 31px;
     }
     
     &__category{
@@ -237,8 +236,15 @@ a {
        align-items:center;
        height: 240px;
        color: $cta-text-color;
-       justify-content: space-evenly;
+       justify-content: center;
 
+       &__indoor{
+         display: flex;
+        width: 1176px;
+        height: 118px;
+        align-items: center;
+        justify-content: space-between;
+      }   
     &__indoor-text{
       width: 700px;
     }
@@ -258,25 +264,16 @@ a {
 */
    .button {
     border: none;
-    color: white;
-    padding: 16px 26px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    width: 177px;
+    height: 60px;
     font-size: $h3-font-size;
     letter-spacing: 2px;
-    transition-duration: 0.8s;
-    cursor: pointer;
   }
+  
   .button0 {
     background: $default-gradient;
     color: $cta-text-color;
-    border: none;
     border-radius: 2em;
-  }
-  
-  .button0:hover {
-    color: $container-text-color;
   }
 
   .button1 {
@@ -288,14 +285,14 @@ a {
   
   .button1:hover {
     background-color: $cta-text-color;
-    color: $container-text-color;
   }
 
   .button-blog {
     background: $default-green;
     border: none;
     color: white;
-    padding: 4px 12px;
+    width: 100px;
+    height: 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -311,11 +308,16 @@ a {
    .footer{
      background-color: $footer-background-color;
      display: flex;
-     flex-wrap: wrap;
-     align-items:center;
      height: 35px;
      color: $cta-text-color;
      justify-content: space-around;
+
+     &__indoor{
+      display: flex;
+      width: 1176px;
+      align-items: center;
+      justify-content: space-between;
+     }
 
      &__text{
       color: $cta-text-color;

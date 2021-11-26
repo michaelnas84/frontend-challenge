@@ -14,27 +14,24 @@ $variable-prefix: '';
  * Colors
  *
  */
-$colors: (
-  'blue': #07a
-);
 $theme-background-color: white;
 $blog-background-color: #f7f7f7;
 $footer-background-color: #222222;
 
 // Text colors.
-$body-color: #222;
 $header-text-color: #9d9897;
-$container-text-color: #161616;
+$title-text-color:#272727;
+$container-text-color: #555555;
 $p-text-color: #575454;
 $cta-text-color: white;
 $default-green: #00e2bf;
 $date-color: #b6b6b6;
 
 // Shadows.
-$default-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+$default-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
 
 // Gradient
-$default-gradient: linear-gradient(90deg, rgba(0,255,177,1) 0%, rgba(0,98,255,1) 100%);
+$default-gradient: linear-gradient(90deg, #00FFB1 0%, #0062FF 100%);
 
 // Font sizes.
 $font-sizes: (
@@ -62,32 +59,6 @@ $default-font-weight: 100;
 
 /**
  *
- * Transitions
- *
- */
-$trs: 0.3s;
-$trs-slow: 0.5s;
-
-/**
- *
- * Grid
- *
- */
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-);
-
-$grid-columns: 12;
-$grid-gutter-width: 1.5rem;
-$grid-row-columns: 6;
-
-/**
- *
  * Container
  *
  */
@@ -99,12 +70,16 @@ $container-max-widths: (
   xxl: 1320px
 );
 
-$margin-top-title: 25px;
-$margin-top-bottom: 40px;
-$margin-bottom-title-container: 4px;
-$margin-bottom-title-blog: 8px;
+/**
+ *
+ * Margin
+ *
+ */
+$margin-left-right-content: 45px;
+$margin-top-bottom: 46px;
+$margin-top-blog: 68px;
+$margin-bottom-blog: 52px;
 $margin-top-bottom-category: 17px;
-$padding-left-right-blog: 50px;
 
 /**
  *

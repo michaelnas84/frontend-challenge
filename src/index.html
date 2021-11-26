@@ -55,17 +55,15 @@
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
-    <div class="swiper-slide" style="background-image:url(images/background1-slider.jpg);">
+    <div class="swiper-slide" style="background-image:linear-gradient(rgba(103, 108, 114, 0.43), rgba(103, 108, 114, 0.43)), url(images/background1-slider.png);">
       <div class="indoor-slider">
       <div class="title-slider">Lorem Ipsum is simple dummy!</div>
       <div class="content-slider">Lorem Ipsum has been the industry’s standard dummy text ever since the<br>1500s, when an unknown printer took a galley of type and scrambled it<br>to make a type specimen book. It has survived not only five</div>
-      <button class="button button0">BUTTON -></button>
+      <button class="button button0">BUTTON  <img src="images/Icon-feather-arrow-right.svg"></button>
      </div>
     </div>
     ...
   </div>
-
-
   <!-- If we need navigation buttons -->
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
@@ -115,7 +113,6 @@
   <!-- start-blog -->
   <section class="blog">
     <div class="container">
-      <div class="container">
         <div class="card-short-content-blog">
           <figure class="card-short-content-blog__figure">
             <img src="images/image-blog.png" alt="" />
@@ -161,42 +158,36 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
   </section>
   <!-- /end-blog -->
   
   <!-- start-cta -->
   <div class="cta">
+    <div class="cta__indoor">
     <div class="cta__indoor-text">
       <h3 class="cta__title">Lorem Ipsum is simply dummy!</h3>
        <div class="cta__content">
          <h3>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when<br>an unknown printer took a galley of type and scrambled it to make a type specimen</h3>
        </div>
      </div>
-    <button class="button button1">BUTTON -></button>
+    <button class="button button1">BUTTON  <img src="images/Icon-feather-arrow-right.svg"></button>
+  </div>
   </div>
   <!-- /end-cta -->
   
   <!-- start-footer -->
   <footer class="footer">
+    <div class="footer__indoor">
     <div class="footer__text">
         <h3>Todos os direitos reservados</h3>
     </div>
-    <p>Fuerza</p>
+    <img src="images/icon-footer.svg">
+  </div>
   </footer>
   <!-- /end-footer -->
 </body>
 
   <!-- start-scripts -->
-<script>
-      const swiper = new Swiper('.swiper', {
-        if($(".slider .slide").length == 1) {
-    $('.swiper-wrapper').addClass( "disabled" );
-    $('.swiper-pagination').addClass( "disabled" );
-      // Optional parameters
-      loop: true,
-    });
-</script>
 <script src="scripts/main.js"></script>
 </html>
