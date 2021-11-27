@@ -23,6 +23,7 @@ $header-text-color: #9d9897;
 $title-text-color:#272727;
 $container-text-color: #555555;
 $p-text-color: #575454;
+$p3-text-color: white;
 $cta-text-color: white;
 $default-green: #00e2bf;
 $date-color: #b6b6b6;
@@ -45,7 +46,7 @@ $font-sizes: (
   xxs: 10px, 
 );
 
-$font-size-base: 1rem;
+$font-size-base: 1.02rem;
 $h0-font-size: map-get($font-sizes, xxl);
 $h1-font-size: map-get($font-sizes, xl);
 $h2-font-size: map-get($font-sizes, lg);
@@ -70,6 +71,9 @@ $container-max-widths: (
   xxl: 1320px
 );
 
+$default-width-card-short: 332px;
+$default-title-height: 31px;
+
 /**
  *
  * Margin
@@ -78,8 +82,8 @@ $container-max-widths: (
 $margin-left-right-content: 45px;
 $margin-top-bottom: 46px;
 $margin-top-blog: 68px;
-$margin-bottom-blog: 52px;
-$margin-top-bottom-category: 17px;
+$margin-bottom-blog: 42px;
+$margin-top-bottom-category: 15px;
 
 /**
  *

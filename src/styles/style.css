@@ -33,27 +33,32 @@
   src: url("../fonts/futura/futura medium bt.ttf") format("opentype");
 }
 
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/gotham/Gotham-Black.otf") format("opentype");
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Futura;
-  overflow-x: hidden;
+  font-family: Futura, Gotham;
 }
 
 /**
- *
- * Body
- *
- */
+  *
+  * Body
+  *
+  */
 body {
   background-color: white;
-  font-size: 14px;
+  overflow-x: hidden;
 }
 
 p {
   color: #575454;
+  font-weight: 600;
 }
 
 p2 {
@@ -61,11 +66,15 @@ p2 {
   font-size: 16px;
 }
 
+p3 {
+  color: white;
+}
+
 /**
- *
- * Menu
- *
- */
+  *
+  * Menu
+  *
+  */
 li {
   list-style: none;
 }
@@ -93,7 +102,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 40px;
+  margin-left: 34px;
 }
 
 .nav-item {
@@ -101,7 +110,7 @@ a {
 }
 
 .nav-link {
-  font-size: 1rem;
+  font-size: 1.02rem;
   color: #9d9897;
 }
 
@@ -111,10 +120,10 @@ a {
 }
 
 /**
- *
- * Header
- *
- */
+  *
+  * Header
+  *
+  */
 .header {
   background-color: white;
   left: 0;
@@ -149,48 +158,52 @@ a {
 }
 
 /**
- *
- * Slider
- *
- */
+  *
+  * Slider
+  *
+  */
 .swiper {
   margin-top: 100px;
   width: 100%;
   height: 780px;
-  color: white;
   text-align: center;
+  color: white;
+}
+
+.swiper-slide {
+  background-repeat: no-repeat;
 }
 
 .indoor-slider {
   margin-left: 16px;
-  margin-top: 242px;
+  margin-top: 251px;
 }
 
 .title-slider {
-  font-weight: 700;
-  font-size: 2.89vw;
-  margin-bottom: 24px;
+  font-family: Gotham;
+  font-size: 50px;
+  margin-bottom: 23px;
 }
 
 .content-slider {
-  font-size: 1.28vw;
+  font-size: 25px;
   line-height: 1.4;
   margin-bottom: 48px;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  padding-left: 16%;
+  padding-left: 15%;
   padding-right: 15%;
   color: white !important;
-  font-weight: 900;
+  font-weight: bolder;
 }
 
 /**
-*
-* Container
-*
-*/
+  *
+  * Container
+  *
+  */
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,7 +224,7 @@ a {
   text-align: center;
   width: 332px;
   line-height: 25px;
-  font-weight: 100;
+  font-weight: 500;
   font-size: 16px;
   margin-top: 46px;
   margin-bottom: 46px;
@@ -225,22 +238,23 @@ a {
 }
 
 .card-short-content__title {
+  font-family: Gotham;
   color: #272727;
   font-size: 20px;
   height: 31px;
 }
 
 /**
-*
-* Blog
-*
-*/
+  *
+  * Blog
+  *
+  */
 .card-short-content-blog {
   width: 332px;
   line-height: 1.5;
   font-size: 16px;
   margin-top: 68px;
-  margin-bottom: 52px;
+  margin-bottom: 42px;
   margin-left: 45px;
   margin-right: 45px;
 }
@@ -256,13 +270,15 @@ a {
 }
 
 .card-short-content-blog__title {
+  font-family: Gotham;
   font-size: 20px;
   color: #272727;
   height: 31px;
+  margin-bottom: 10px;
 }
 
 .card-short-content-blog__category {
-  margin-top: 17px;
+  margin-top: 15px;
   margin-bottom: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,10 +296,10 @@ a {
 }
 
 /**
-*
-* CTA
-*
-*/
+  *
+  * CTA
+  *
+  */
 .cta {
   background: -webkit-gradient(linear, left top, right top, from(#00FFB1), to(#0062FF));
   background: linear-gradient(90deg, #00FFB1 0%, #0062FF 100%);
@@ -292,17 +308,14 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 240px;
-  color: white;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .cta__indoor {
+  margin-top: 58px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,24 +329,22 @@ a {
           justify-content: space-between;
 }
 
-.cta__indoor-text {
-  width: 700px;
-}
-
 .cta__title {
-  font-size: 2.3vw;
-  margin-bottom: 20px;
+  font-family: Gotham;
+  font-size: 35px;
 }
 
 .cta__content {
-  font-size: 0.75vw;
+  margin-top: 8px;
+  font-size: 20px;
+  line-height: 1.7;
 }
 
 /**
-*
-* Button
-*
-*/
+  *
+  * Button
+  *
+  */
 .button {
   border: none;
   width: 177px;
@@ -350,6 +361,8 @@ a {
 }
 
 .button1 {
+  margin-top: 10px;
+  margin-right: 50px;
   background-color: transparent;
   color: white;
   border: 2px solid white;
@@ -374,10 +387,10 @@ a {
 }
 
 /**
-*
-* Footer
-*
-*/
+  *
+  * Footer
+  *
+  */
 .footer {
   background-color: #222222;
   display: -webkit-box;
@@ -403,21 +416,20 @@ a {
 }
 
 .footer__text {
-  color: white;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 /**
- *
- * Media Screen
- *
- */
+  *
+  * Media Screen
+  *
+  */
 @media only screen and (max-width: 1300px) {
   /**
-*
-* Media Screen Slider
-*
-*/
+  *
+  * Media Screen Slider
+  *
+  */
   .swiper {
     height: 400px;
   }
@@ -439,10 +451,10 @@ a {
     padding-right: 0px;
   }
   /**
-*
-* Media Screen CTA
-*
-*/
+  *
+  * Media Screen CTA
+  *
+  */
   .cta {
     padding: 20px;
     height: 300px;
@@ -455,10 +467,10 @@ a {
     font-size: 14px;
   }
   /**
-*
-* Media Screen Menu
-*
-*/
+  *
+  * Media Screen Menu
+  *
+  */
   .nav-menu {
     position: fixed;
     margin-left: 0px;
