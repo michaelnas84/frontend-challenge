@@ -88,6 +88,29 @@
     border-bottom: 4px solid $default-green;
     padding-bottom: 36px;
   }
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }
 
   /**
   *
@@ -131,15 +154,24 @@
     margin-top: $header-height-desktop;
     width: 100%;
     height: 780px;
-    text-align: center;
+    background-color: #676C72;
     color: white;
   }
-  .swiper-slide{
+  .swiper-slide{  
+  img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
+    opacity: 57%;
+  }
   }
   .indoor-slider{
+    width: 100%;
+    position: absolute;
     margin-left: 16px;
     margin-top: 251px;
+    text-align: center;
   }
   .title-slider{
     font-family: Gotham;
@@ -290,6 +322,12 @@
     background: $default-gradient;
     color: $cta-text-color;
     border-radius: 2em;
+  
+  img{
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+  }  
   }
 
   .button1 {
@@ -301,10 +339,6 @@
     border-radius: 2em;
   }
   
-  .button1:hover {
-    background-color: $cta-text-color;
-  }
-
   .button-blog {
     background: $default-green;
     border: none;
