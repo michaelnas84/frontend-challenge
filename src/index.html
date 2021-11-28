@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="scripts/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <title>Front-End Challenge</title>
 </head>
 <body>
   <!-- start-header -->
   <header class="header" data-component="header">
+    <div class="wrapper">
     <div class="container">
       <div class="header__body">
         <div class="header__logo">
@@ -18,29 +20,42 @@
             <img src="images/fuerza-studio-logo.png">
           </a>
         </div>
-  		<nav class="menu">
-			<ul>
-				<li><a href="#">A Empresa</a></li>
-				<li><a href="#">Serviços</a>
-					<ul>
-						<li><a href="#">Nossos Serviços 01</a></li>
-						<li><a href="#">Nossos Serviços 02</a>
-							<ul>
-								<li><a href="#">Sub Nossos Serviços 01</a></li>
-								<li><a href="#">Sub Nossos Serviços 02</a></li>
-								<li><a href="#">Sub Nossos Serviços 03</a></li>
-							</ul>
-              <li><a href="#">Nossos Serviços 03</a>
-						</li>
-					</ul>
-				</li>
-				<li><a href="#">Equipe</a></li>
-				<li><a href="#">Galeria</a></li>
-        <li><a href="#">Fale Conosco</a></li>
-			</ul>
-		</nav>
-    </div>
-  </div>
+          <nav>
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+              <ul class="links">
+                <li><a href="#" class="principal-menu">A Empresa</a></li>
+                <li>
+                  <a href="#" class="desktop-link principal-menu">Serviços</a>
+                  <input type="checkbox" id="show-services">
+                  <label for="show-services">Serviços</label>
+                  <ul>
+                    <li><a href="#">Nossos Serviços 01</a></li>
+                    <hr>
+                    <li>
+                      <a href="#" class="desktop-link">Nossos Serviços 02</a>
+                      <input type="checkbox" id="show-items">
+                      <label for="show-items">Nossos Serviços 02</label>
+                      <hr>
+                      <ul>
+                        <li><a href="#">Sub Nossos Serviços 01</a></li>
+                        <hr>
+                        <li><a href="#">Sub Nossos Serviços 02</a></li>
+                        <hr>
+                        <li><a href="#">Sub Nossos Serviços 03</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Nossos Serviços 03</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="principal-menu">Equipe</a></li>
+                <li><a href="#" class="principal-menu">Galeria</a></li>
+                <li><a href="#" class="principal-menu">Fale Conosco</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
   </header>
   <!-- /end-header -->
 
@@ -185,5 +200,5 @@
 </body>
 
   <!-- start-scripts -->
-<script src="scripts/main.js"></script>
+<!-- <script src="scripts/main.js"></script> -->
 </html>

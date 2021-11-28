@@ -17,6 +17,8 @@ $variable-prefix: '';
 $theme-background-color: white;
 $blog-background-color: #f7f7f7;
 $footer-background-color: #222222;
+$default-border-gray: rgba(204,204,204,0.3);
+$default-background-color-hover: #EBEBEB;
 
 // Text colors.
 $header-text-color: #9d9897;
@@ -27,6 +29,7 @@ $p3-text-color: white;
 $cta-text-color: white;
 $default-green: #00e2bf;
 $date-color: #b6b6b6;
+
 
 // Shadows.
 $default-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
