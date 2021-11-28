@@ -131,6 +131,13 @@ nav .content .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .content .links li a,
@@ -146,11 +153,13 @@ nav .content .links {
   display: none;
 }
 
-.principal-menu:hover {
+.content .links li a:hover {
   border-bottom: 4px solid #00e2bf;
+  padding-bottom: 36px;
 }
 
 .content .links ul a:hover {
+  border-bottom: none;
   background-color: #EBEBEB;
 }
 
@@ -628,6 +637,10 @@ nav .content .links {
   }
   .content .links li {
     margin: 15px 20px;
+  }
+  .content .links li a:hover {
+    border-bottom: none;
+    padding-bottom: none;
   }
   .content .links li a,
   .content .links li label {
