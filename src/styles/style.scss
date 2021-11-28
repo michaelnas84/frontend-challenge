@@ -53,63 +53,56 @@
   }
 
   a {
+
     text-decoration: none;
   }
 
-  .hamburger {
-    display: none;
-  }
 
-  .bar {
-    display: block;
-    width: 50px;
-    height: 6px;
-    margin: 10px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background: $default-gradient;
-  }
 
-  .nav-menu {
-    display: flex;
-    margin-left: 34px;
+  .menu ul li{
+    float: left;
+    width: 190px;
+    height: 42px;
+    display: inline-block;
+    text-align: center;
+    line-height: 42px;
+    position: relative;
+    background-color: white;
   }
-
-  .nav-item {
-  margin-left: 130px;
-  }
-
-  .nav-link{
-    font-size: $font-size-base;
-    color: $header-text-color;
-  }
-
-  .nav-link:hover{
+  
+  .menu ul li:hover{
     border-bottom: 4px solid $default-green;
     padding-bottom: 36px;
   }
-  .subnav-content {
+  
+  .menu ul{
+    padding: 0px;
+  }
+  
+  .menu ul ul{
     display: none;
+    font-size: 14px;
+  }
+  
+  .menu ul li:hover > ul{
+    display:block;
+  }
+  
+  .menu ul ul ul{
+    margin-left: 190px;
+    top: 0px;
     position: absolute;
-    left: 0;
-    background-color: red;
-    width: 100%;
-    z-index: 1;
+    font-size: 14px;
+    border-bottom: none;
   }
   
-  .subnav-content a {
-    float: left;
-    color: white;
-    text-decoration: none;
+  .menu ul ul li:hover{
+    background-color: #EBEBEB;
+    border-bottom: none;
   }
   
-  .subnav-content a:hover {
-    background-color: #eee;
-    color: black;
-  }
-  
-  .subnav:hover .subnav-content {
-    display: block;
+  .menu a{
+    color: $header-text-color;
   }
 
   /**
@@ -135,7 +128,7 @@
   
     &__logo {
       max-width: px-to-rem(142px);
-      margin-left: 18px;
+      margin-right: 80px;
       margin-top: 3px;
       width: 100%;
   
@@ -436,43 +429,7 @@
   *
   * Media Screen Menu
   *
-  */  
-  .nav-menu {
-    position: fixed;
-    margin-left: 0px;
-    left: -100%;
-    top: 6.2rem;
-    flex-direction: column;
-    background: $default-gradient;
-    opacity: 0.96;
-    width: 100%;
-    height: 90%;
-    text-align: center;
-    transition: 0.3s;
-  }
-
-  .nav-menu.active {
-    left: 0;
-  }
-
-  .nav-item {
-    margin: 2.5rem 0;
-  }
-
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-
-  .nav-link{
-    color: $cta-text-color;
-  }
-
-  .nav-link:hover{
-    border-bottom: 5px solid $default-green;
-    padding-bottom: 5px;
-  }
-
+  */ 
   .header__logo {
     margin-right: px-to-rem(200px);
   }
